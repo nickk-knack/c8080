@@ -1,6 +1,8 @@
 #ifndef DISASSEM_H
 #define DISASSEM_H
 
+#include <stdio.h>
+
 int disassem8080Op(unsigned char* codeBuffer, int pc) {
 	unsigned char* code = &codeBuffer[pc];
 	int opBytes = 1;
