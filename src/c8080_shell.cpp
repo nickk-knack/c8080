@@ -1,28 +1,28 @@
-/*
-	(8/1/18, 7:30 PM CDT)
-	Currently implements 91.40% of instructions, or 234/256.
-	The 22 (20 if you don't count OUT/IN) remaining unimplemented 
-	instructions consist of ACI, SBI, and rotate instructions,
-	as well as a few "weird" instructions. 
+/******************************************************************************
+(8/1/18, 7:30 PM CDT)
+Currently implements 91.40% of instructions, or 234/256.
+The 22 (20 if you don't count OUT/IN) remaining unimplemented 
+instructions consist of ACI, SBI, and rotate instructions,
+as well as a few "weird" instructions. 
 
-	Two instructions have partial implementations (OUT D8/IN D8) 
-	but still contain "UnimplementedInstruction" as a comment to 
-	show that they are partial implementations.
+Two instructions have partial implementations (OUT D8/IN D8) 
+but still contain "UnimplementedInstruction" as a comment to 
+show that they are partial implementations.
 
-	One instruction, DAA, is weird to me. No idea how it works.
-	Need to figure it out.
+One instruction, DAA, is weird to me. No idea how it works.
+Need to figure it out.
 
-	Todo: 
-	* add command line arguments to allow for debugging/stepping
-	through program
-	* live code input
-	* hiding disassembly/state output
-	* remove any strictly c code and reimplement as c++
-	* ^ goes for any other files in this project
-	* FIX SUB INSTRUCTIONS
-	* ALSO SBB B, and then implement rest of SBB
-	* BECAUSE THAT SHIT AINT RIGHT AND I KNOW IT
-*/
+Todo: 
+* add command line arguments to allow for debugging/stepping
+through program
+* live code input
+* hiding disassembly/state output
+* remove any strictly c code and reimplement as c++
+	- goes for any other files in this project
+* FIX SUB INSTRUCTIONS
+	- ALSO SBB B, and then implement rest of SBB
+	- BECAUSE THAT SHIT AINT RIGHT AND I KNOW IT
+******************************************************************************/
 
 #include <iostream>
 #include <iomanip>
