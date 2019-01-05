@@ -1,3 +1,5 @@
+@echo off
+
 if not exist bin\ (
   echo "bin" folder not found, creating...
   mkdir bin
